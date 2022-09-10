@@ -1,0 +1,36 @@
+{
+    "name": "laravel-lib/charts",
+    "description": "Charts Library for Laravel",
+    "keywords": ["laravel", "charts"],
+    "homepage": "https://github.com/laravel-lib/charts",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zulkifli Mohamed",
+            "email": "mr.putera@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/contracts": "^7.14.1|^8.0|^9.0",
+        "illuminate/http": "^7.14.1|^8.0|^9.0",
+        "illuminate/console": "^7.14.1|^8.0|^9.0",
+        "illuminate/support": "^7.14.1|^8.0|^9.0",
+        "laravel-lib/chartphp": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelLib\\Charts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelLib\\Charts\\ChartsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

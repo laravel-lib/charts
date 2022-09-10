@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types = 1);
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use LaravelLib\ChartPHP\Chart;
+use LaravelLib\Charts\BaseChart;
+
+class DummyClass extends BaseChart
+{
+    public function handler(Request $request): Chart
+    {
+        return Chart::build()
+            ->labels(['First', 'Second', 'Third'])
+            ->dataset('Sample', [1, 2, 3])
+            ->dataset('Sample 2', [3, 2, 1]);
+    }
+}
